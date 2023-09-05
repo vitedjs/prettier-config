@@ -1,0 +1,39 @@
+{
+  "name": "@vited/prettier-config",
+  "version": "0.0.1",
+  "description": "Shareable Prettier configuration for Vited React projects",
+  "keywords": [
+    "vited",
+    "prettier"
+  ],
+  "homepage": "https://github.com/vitedjs/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/vitedjs/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitedjs/prettier-config.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "MIT",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "prettier"
+  },
+  "prettier": ".",
+  "dependencies": {
+    "prettier-plugin-packagejson": "^2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
