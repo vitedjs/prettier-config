@@ -22,24 +22,41 @@
     "email": "i@guoyunhe.me",
     "url": "https://guoyunhe.me/"
   },
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "files": [
-    "dist/",
+    "dist",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "test": "prettier"
+    "build": "node-scripts build",
+    "format": "node-scripts format",
+    "lint": "node-scripts lint",
+    "test": "node-scripts test",
+    "watch": "node-scripts watch"
   },
   "prettier": ".",
+  "eslintConfig": {
+    "extends": "@guoyunhe/node-scripts"
+  },
+  "jest": {
+    "preset": "@guoyunhe/node-scripts"
+  },
   "dependencies": {
     "prettier-plugin-packagejson": "^2.4.7"
   },
   "devDependencies": {
+    "@guoyunhe/node-scripts": "^2.2.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.4",
     "eslint": "^8.55.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
